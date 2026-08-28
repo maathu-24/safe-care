@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safe Care Dental Clinic — professional, gentle dental care for healthy smiles.">
+  <meta name="theme-color" content="#0b4fa8">
+  <title>Safe Care Dental Clinic | Healthy Smile, Happy Life</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow"></div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="topline">Your Smile, Our Priority</span></span>
+      <div class="topbar-right">
+        <span class="clinic-hours"><i class="fa-regular fa-clock"></i> Open: Mon - Sat (9.00 AM - 6.00 PM)</span>
+        <div class="language-wrap">
+          <button class="language-btn" id="languageBtn" aria-expanded="false"><i class="fa-solid fa-globe"></i> <span id="languageLabel">English</span> <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="language-menu" id="languageMenu">
+            <button data-lang="en">🇬🇧 English</button>
+            <button data-lang="ta">🇱🇰 தமிழ்</button>
+            <button data-lang="si">🇱🇰 සිංහල</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Safe Care Dental Clinic">
+        <span class="brand-logo"><img src="images/safe-care-tooth-logo.jpg.png" alt="Safe Care tooth logo"></span>
+        <span class="brand-copy"><strong><b>SAFE</b> CARE</strong><small>DENTAL CLINIC</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="active" data-i18n="navHome">Home</a>
+        <a href="#about" data-i18n="navAbout">About Us</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#doctor" data-i18n="navDoctor">Our Doctor</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <a class="nav-book" href="tel:0768303392"><i class="fa-solid fa-phone"></i> <span data-i18n="bookNow">Book an Appointment</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i class="fa-solid fa-star"></i> <span data-i18n="welcome">Welcome to Safe Care Dental Clinic</span></span>
+          <h1><span data-i18n="heroA">Expert Dental Care</span><br><span data-i18n="heroB">for a</span> <em data-i18n="heroC">Healthy Smile</em></h1>
+          <p data-i18n="heroText">We provide gentle, high-quality dental care with modern technology for you and your family.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:0768303392"><i class="fa-solid fa-phone"></i><span><b data-i18n="bookAppointment">Book an Appointment</b><small>Call Us Now</small></span></a>
+            <a class="btn btn-outline" href="#services"><i class="fa-solid fa-arrow-right"></i><span>Our Services<small>Explore Now</small></span></a>
+          </div>
+
+          <div class="hero-benefits">
+            <div class="glass mini-card"><span><i class="fa-solid fa-tooth"></i></span><div><b data-i18n="modern">Modern Technology</b><small data-i18n="modernSub">Advanced Dental Equipment</small></div></div>
+            <div class="glass mini-card"><span><i class="fa-solid fa-shield-heart"></i></span><div><b data-i18n="painless">Painless Treatment</b><small data-i18n="painlessSub">Comfortable & Safe</small></div></div>
+            <div class="glass mini-card"><span><i class="fa-solid fa-user-doctor"></i></span><div><b data-i18n="experienced">Experienced Dentist</b><small data-i18n="experiencedSub">Professional Dental Care</small></div></div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal delay-1">
+          <div class="hero-image-frame">
+            <img src="images/hero-clinic.png" alt="Safe Care Dental Clinic building">
+            <div class="image-overlay"></div>
+            <div class="hero-image-label"><i class="fa-solid fa-location-dot"></i><span>Safe Care Dental Clinic</span><small>Pulmodai, Sri Lanka</small></div>
+          </div>
+          <div class="floating-pill pill-one"><i class="fa-solid fa-shield-heart"></i><span data-i18n="safe">Safe & Hygienic</span></div>
+          <div class="floating-pill pill-two"><i class="fa-solid fa-people-group"></i><span data-i18n="family">Family Friendly</span></div>
+        </div>
+      </div>
+
+      <div class="hero-stats-wrap container reveal delay-2">
+        <div class="hero-stats glass-dark">
+          <div class="stat"><span class="stat-icon"><i class="fa-solid fa-user-group"></i></span><strong class="counter" data-target="1500">0</strong><small data-i18n="happyPatients">Happy Patients</small></div>
+          <div class="stat"><span class="stat-icon"><i class="fa-solid fa-award"></i></span><strong>8+</strong><small data-i18n="experience">Years Experience</small></div>
+          <div class="stat"><span class="stat-icon"><i class="fa-solid fa-shield-halved"></i></span><strong>100%</strong><small data-i18n="hygiene">Safe & Hygienic</small></div>
+          <div class="stat"><span class="stat-icon"><i class="fa-solid fa-star"></i></span><strong>5.0</strong><small data-i18n="rating">Patient Rating</small></div>
+        </div>
+      </div>
+
+      <div class="hero-wave wave-red"></div>
+      <div class="hero-wave wave-blue"></div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="ourServices">OUR SERVICES</span>
+          <h2 data-i18n="servicesTitle">Complete Dental Care for You & Your Family</h2>
+          <p data-i18n="servicesSub">Essential dental services for healthy, confident smiles.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card glass reveal"><div class="service-image"><img src="images/teeth-cleaning.jpg"><span>01</span></div><div><span class="service-icon"><i class="fa-solid fa-tooth"></i></span><h3 data-i18n="s1">Dental Check-up</h3><p data-i18n="s1d">Regular checkups for a healthy and bright smile.</p></div></article>
+          <article class="service-card glass reveal delay-1"><div class="service-image"><img src="images/teeth-whitening.jpg" alt="Teeth cleaning"><span>02</span></div><div><span class="service-icon"><i class="fa-solid fa-sparkles"></i></span><h3 data-i18n="s2">Teeth Cleaning</h3><p data-i18n="s2d">Professional cleaning for strong and fresh teeth.</p></div></article>
+          <article class="service-card glass reveal delay-2"><div class="service-image"><img src="images/dental-filling.jpg" alt="Dental filling"><span>03</span></div><div><span class="service-icon"><i class="fa-solid fa-tooth"></i></span><h3 data-i18n="s3">Tooth Fillings</h3><p data-i18n="s3d">Tooth-coloured fillings for cavities and tooth decay.</p></div></article>
+          <article class="service-card glass reveal"><div class="service-image"><img src="images/root-canal.jpg" alt="Root canal treatment"><span>04</span></div><div><span class="service-icon"><i class="fa-solid fa-staff-snake"></i></span><h3 data-i18n="s4">Root Canal Treatment</h3><p data-i18n="s4d">Comfort-focused treatment to help save a natural tooth.</p></div></article>
+          <article class="service-card glass reveal delay-1"><div class="service-image"><img src="images/tooth-extraction.jpg" alt="Tooth extraction"><span>05</span></div><div><span class="service-icon"><i class="fa-solid fa-tooth"></i></span><h3 data-i18n="s5">Tooth Extraction</h3><p data-i18n="s5d">Safe and gentle extraction with appropriate aftercare.</p></div></article>
+          <article class="service-card glass reveal delay-2"><div class="service-image"><img src="images/braces.jpg" alt="Braces and alignment"><span>06</span></div><div><span class="service-icon"><i class="fa-solid fa-teeth"></i></span><h3 data-i18n="s6">Braces & Alignment</h3><p data-i18n="s6d">Straighten your teeth and improve your smile.</p></div></article>
+          <article class="service-card glass reveal"><div class="service-image"><img src="images/dentures.jpg" alt="Dentures"><span>07</span></div><div><span class="service-icon"><i class="fa-solid fa-teeth-open"></i></span><h3 data-i18n="s7">Dentures</h3><p data-i18n="s7d">Comfortable options to restore function and confidence.</p></div></article>
+          <article class="service-card glass reveal delay-1"><div class="service-image"><img src="images/children-dentistry.jpg" alt="Children's dentistry"><span>08</span></div><div><span class="service-icon"><i class="fa-solid fa-child-reaching"></i></span><h3 data-i18n="s8">Children's Dentistry</h3><p data-i18n="s8d">Gentle, family-friendly dental care for little smiles.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section doctor-section" id="doctor">
+      <div class="container doctor-grid">
+        <div class="doctor-card glass reveal">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=90" alt="Dental professional placeholder">
+            <span><i class="fa-solid fa-circle-check"></i> Dr. Faseer</span>
+          </div>
+          <div class="doctor-info">
+            <span class="section-kicker" data-i18n="ourDoctor">OUR DOCTOR</span>
+            <h2>Dr. Faseer</h2>
+            <p class="doctor-role" data-i18n="dentalProfessional">Dental Care Professional</p>
+            <p data-i18n="doctorText">Dedicated to providing gentle, comfortable and quality dental care with a patient-first approach.</p>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="gentle">Gentle & Friendly Approach</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="modernCare">Modern Treatment Techniques</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="patientFirst">Patient Comfort Priority</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stats-card reveal delay-1">
+          <div class="stat"><span>☺</span><strong class="counter" data-target="1500">0</strong><small data-i18n="happyPatients">Happy Patients</small></div>
+          <div class="stat"><span>🦷</span><strong>8+</strong><small data-i18n="experience">Years Experience</small></div>
+          <div class="stat"><span>♢</span><strong>100%</strong><small data-i18n="hygiene">Safe & Hygienic</small></div>
+          <div class="stat"><span>★</span><strong>5.0</strong><small data-i18n="rating">Patient Rating</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="whyKicker">WHY CHOOSE SAFE CARE</span>
+          <h2 data-i18n="whyTitle">Care that feels safe, modern and personal.</h2>
+        </div>
+        <div class="why-grid">
+          <div class="glass why-card reveal"><span><i class="fa-solid fa-user-doctor"></i></span><h3 data-i18n="w1">Experienced Team</h3><p data-i18n="w1d">Skilled & caring dental professionals.</p></div>
+          <div class="glass why-card reveal delay-1"><span><i class="fa-solid fa-microchip"></i></span><h3 data-i18n="w2">Advanced Technology</h3><p data-i18n="w2d">Modern equipment for precise treatment.</p></div>
+          <div class="glass why-card reveal delay-2"><span><i class="fa-solid fa-shield-heart"></i></span><h3 data-i18n="w3">Painless Treatment</h3><p data-i18n="w3d">Comfortable care with a gentle approach.</p></div>
+          <div class="glass why-card reveal"><span><i class="fa-solid fa-shield-halved"></i></span><h3 data-i18n="w4">Hygiene & Safety</h3><p data-i18n="w4d">Clean, sterilized and safe clinic environment.</p></div>
+          <div class="glass why-card reveal delay-1"><span><i class="fa-solid fa-wallet"></i></span><h3 data-i18n="w5">Affordable Care</h3><p data-i18n="w5d">Quality dental care at reasonable cost.</p></div>
+          <div class="glass why-card reveal delay-2"><span><i class="fa-solid fa-heart"></i></span><h3 data-i18n="w6">Patient Satisfaction</h3><p data-i18n="w6d">Your comfort and smile are our priority.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-testimonials">
+      <div class="container two-col">
+        <div class="panel glass reveal" id="gallery">
+          <div class="panel-heading"><div><span class="section-kicker" data-i18n="galleryKicker">CLINIC GALLERY</span><h2 data-i18n="galleryTitle">A comfortable place for your smile</h2></div></div>
+          <div class="gallery-grid">
+            <img src="images/safe-care-original.jpg" alt="Safe Care clinic exterior">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=85" alt="Dental clinic interior">
+            <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=700&q=85" alt="Dental treatment room">
+            <img src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=700&q=85" alt="Dental equipment">
+          </div>
+          
+        </div>
+
+        <div class="panel glass testimonial-panel reveal delay-1" id="testimonials">
+          <span class="quote-mark">“</span>
+          <span class="section-kicker" data-i18n="patientStories">PATIENT STORIES</span>
+          <h2 data-i18n="testimonialTitle">What Our Patients Say</h2>
+          <div class="testimonial">
+            <p data-i18n="testimonial">Very friendly doctor and staff. Treatment was comfortable and the clinic was clean and welcoming. Highly recommended!</p>
+            <strong>— Safe Care Patient</strong>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section">
+      <div class="container location-card glass reveal">
+        <div class="location-copy">
+          <span class="section-kicker">VISIT SAFE CARE</span>
+          <h2>Find us in Pulmodai</h2>
+          <p>Safe Care Dental Clinic<br>Pulmodai, Sri Lanka</p>
+          <a class="btn btn-primary" href="https://maps.app.goo.gl/KmxPQM3H5MEeFo6B9" target="_blank" rel="noopener"><i class="fa-solid fa-location-arrow"></i><span>Open in Google Maps</span></a>
+        </div>
+        <div class="map-preview"><div class="map-grid"></div><div class="map-pin"><i class="fa-solid fa-location-dot"></i><span>Safe Care</span></div><div class="map-route"></div></div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker" data-i18n="faqKicker">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 data-i18n="faqTitle">Questions? We've got answers.</h2>
+          <p data-i18n="faqSub">Quick information before your visit.</p>
+        </div>
+        <div class="faq-grid">
+          <details class="glass reveal"><summary data-i18n="q1">How can I book an appointment?</summary><p data-i18n="a1">Tap any Book an Appointment button to call Safe Care directly on 076 830 3392.</p></details>
+          <details class="glass reveal delay-1"><summary data-i18n="q2">Do you provide teeth cleaning?</summary><p data-i18n="a2">Yes. Teeth cleaning and scaling can be discussed with the clinic.</p></details>
+          <details class="glass reveal delay-2"><summary data-i18n="q3">Do you treat children?</summary><p data-i18n="a3">Yes. Children's dental care is included in the demo service structure and can be confirmed with the clinic.</p></details>
+          <details class="glass reveal"><summary data-i18n="q4">What are your clinic hours?</summary><p data-i18n="a4">Please contact Safe Care directly to confirm the current opening hours.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div><span class="section-kicker" data-i18n="ctaKicker">READY FOR A HEALTHY SMILE?</span><h2 data-i18n="ctaTitle">Book your appointment today.</h2><p data-i18n="ctaText">Take the first step toward comfortable, confident dental care.</p></div>
+          <a class="btn btn-light" href="tel:0768303392"><i class="fa-solid fa-phone"></i><span data-i18n="bookAppointment">Book an Appointment</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#home"><span class="brand-logo"><img src="images/safe-care-tooth-logo.jpg.png" alt="Safe Care tooth logo"></span><span class="brand-copy"><strong><b>SAFE</b> CARE</strong><small>DENTAL CLINIC</small></span></a>
+        <p data-i18n="footerText">We are committed to providing excellent dental care with modern technology for you and your family.</p>
+      </div>
+      <div><h3 data-i18n="quickLinks">Quick Links</h3><a href="#home" data-i18n="navHome">Home</a><a href="#about" data-i18n="navAbout">About Us</a><a href="#services" data-i18n="navServices">Services</a><a href="#doctor" data-i18n="navDoctor">Our Doctor</a><a href="#gallery" data-i18n="navGallery">Gallery</a><a href="#faq" data-i18n="navFaq">FAQ</a></div>
+      <div><h3 data-i18n="contactUs">Contact Us</h3><a href="tel:0768303392"><i class="fa-solid fa-phone"></i> 076 830 3392</a><a href="mailto:maathulan2003@gmail.com"><i class="fa-solid fa-envelope"></i> maathulan2003@gmail.com</a><span><i class="fa-solid fa-location-dot"></i> Safe Care Dental Clinic</span><span data-i18n="location">Pulmodai, Sri Lanka</span></div>
+      <div><h3 data-i18n="appointment">Book an Appointment</h3><a class="footer-call" href="tel:0768303392"><i class="fa-solid fa-phone"></i> <span data-i18n="callNow">Call 076 830 3392</span></a><a class="footer-email" href="mailto:maathulan2003@gmail.com"><i class="fa-solid fa-envelope"></i> <span data-i18n="emailUs">Email Us</span></a></div>
+    </div>
+    <div class="container copyright"><span>© 2026 Safe Care Dental Clinic. <span data-i18n="rights">All Rights Reserved.</span></span><span>Designed with ♥ for Healthy Smiles</span></div>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="float-call" href="tel:0768303392" aria-label="Call Safe Care"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+    <a class="float-whatsapp" href="https://wa.me/94768303392" target="_blank" rel="noopener" aria-label="WhatsApp Safe Care"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+  </div>
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
